@@ -1,7 +1,7 @@
 import { Group, Grid, Card } from "@mantine/core";
 
-import Picture from "../../images/catherine.png";
-import CV from "../../files/Catherine Yeh CV.pdf";
+import Picture from "../../images/zoey.jpeg";
+import CV from "../../files/Zoey Ki CV.pdf";
 
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
 import { FaGoogleScholar } from "react-icons/fa6";
@@ -21,40 +21,40 @@ function Masthead() {
               <MyImage
                 src={Picture}
                 id="prof-pic"
-                title="Catherine Yeh"
-                alt="Picture of Catherine Yeh"
+                title="Zoey Ki"
+                alt="Picture of Zoey Ki"
               />
             </Card.Section>
           </Card>
         </Grid.Col>
         <Grid.Col span={{ base: 12, sm: 7, md: 8, lg: 9 }}>
           <Group justify="space-between" align="center" id="header-contain">
-            <h1>Catherine Yeh</h1>
+            <h1>Zoey (Dayeon) Ki</h1>
             <Group gap={"sm"} className="icons" justify="end">
               <a
                 target="_blank"
-                href="mailto:catherineyeh@g.harvard.edu"
+                href="mailto:dayeonki@umd.edu"
                 title="Email"
               >
                 <FaEnvelope />
               </a>
               <a
                 target="_blank"
-                href="https://www.linkedin.com/in/catherinesyeh/"
+                href="https://www.linkedin.com/in/zoey-ki/"
                 title="LinkedIn"
               >
                 <FaLinkedinIn />
               </a>
               <a
                 target="_blank"
-                href="https://scholar.google.com/citations?user=KROUdngAAAAJ"
+                href="https://scholar.google.com/citations?user=1-zFF7PywAAAAJ&hl=en"
                 title="Google Scholar"
               >
                 <FaGoogleScholar />
               </a>
               <a
                 target="_blank"
-                href="https://github.com/catherinesyeh/"
+                href="https://github.com/dayeonki/"
                 title="Github"
               >
                 <FaGithub />
@@ -63,72 +63,53 @@ function Masthead() {
           </Group>
 
           <p className="monospace accent tagline grad2">
-            CS Ph.D. Candidate @ Harvard University
+            CS Ph.D. Student @ University of Maryland
           </p>
 
           <p>
-            Hi, I'm Catherine! I'm a third-year computer science Ph.D. student @
-            Harvard University, advised by{" "}
+            Hi, I'm Zoey! I'm a second-year computer science Ph.D. student @
+            University of Maryland, advised by{" "}
             <a
               target="_blank"
-              href="https://www.bewitched.com/"
-              title="Martin Wattenberg"
+              href="https://www.cs.umd.edu/~marine/"
+              title="Marine Carpuat"
             >
-              Prof. Martin Wattenberg
-            </a>{" "}
-            and{" "}
-            <a
-              target="_blank"
-              href="http://www.fernandaviegas.com/"
-              title="Fernanda Viégas"
-            >
-              Prof. Fernanda Viégas
+              Prof. Marine Carpuat
             </a>{" "}
             in the{" "}
             <a
               target="_blank"
-              href="https://insight.seas.harvard.edu/"
-              title="Insight + Interaction Lab"
+              href="https://wiki.umiacs.umd.edu/clip/index.php/Main_Page"
+              title="CLIP Lab"
             >
-              Insight + Interaction Lab
+              Computational Linguistics and Information Processing (CLIP) Lab
             </a>
             . My research interests lie at the intersection of{" "}
-            <b>visualization</b>, <b>interpretability</b>, and{" "}
-            <b>human-AI interaction</b>. I'm fortunate to be supported by the{" "}
-            <a target="_blank" href="https://www.nsfgrfp.org/" title="NSF GRFP">
-              NSF Graduate Research Fellowship
-            </a>{" "}
-            and{" "}
-            <a
-              target="_blank"
-              href="https://kempnerinstitute.harvard.edu/education/graduate-fellowship/"
-              title="Kempner Fellowship"
-            >
-              Kempner Institute Graduate Fellowship
-            </a>
-            .
+            <b>multilingual</b>, <b>cross-cultural NLP</b>, and{" "}
+            <b>machine translation</b>. 
+            Through my research, I hope to develop methods that can effectively align language models with multilingual users, aiming to bridge the gap between them.
           </p>
 
           <p>
-            Previously, I received my B.A. in computer science + cognitive
-            science @ Williams College. As an undergrad, I worked with{" "}
+            Previously, I received my B.S. in statistics + computer
+            science @ Korea University. As an undergrad, I worked with{" "}
             <a
               target="_blank"
-              href="https://www.cs.williams.edu/~iris/"
-              title="Iris Howley"
+              href="https://seominjoon.github.io/"
+              title="Minjoon Seo"
             >
-              Prof. Iris Howley
+              Prof. Minjoon Seo
             </a>{" "}
-            to design an{" "}
+            @ Language & Knowledge Lab and{" "}
             <a
               target="_blank"
-              href="https://unbound.williams.edu/theses/islandora/object/studenttheses%3A1960"
-              title="Undergrad Thesis"
+              href="https://sites.google.com/site/jaegulchoo/"
+              title="Jaegul Choo"
             >
-              empirical framework for post-hoc explainable AI
-            </a>
-            . I've also interned at Apple Research, Microsoft Research{" "}
-            <span className="monospace smaller">[x2]</span>, and Adobe Research.
+              Prof. Jaegul Choo
+            </a>{" "}
+            @ Data and Visual Analytics Lab. 
+            I've also interned at Adobe Research.
             You can find more information in my{" "}
             <a target="_blank" href={CV} title="CV">
               CV
