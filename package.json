@@ -10,7 +10,7 @@
     "predeploy": "yarn build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "gh-pages-clean gh-pages -d dist --no-history"
+    "deploy": "yarn build && gh-pages-clean gh-pages && gh-pages -d dist --no-history"
   },
   "dependencies": {
     "@cascadia-code/scroll-to-hash-element": "^1.0.1",
