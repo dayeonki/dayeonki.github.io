@@ -24,7 +24,7 @@ function Update(props: UpdateType) {
             className="update-tag"
             key={index}
             color={
-              tag === "award"
+              tag === "talk"
                 ? "orange"
                 : tag === "milestone"
                 ? "pink"
@@ -33,7 +33,7 @@ function Update(props: UpdateType) {
             variant="light"
             size="xs"
             leftSection={
-              tag === "award" ? (
+              tag === "talk" ? (
                 <FaAward />
               ) : tag === "milestone" ? (
                 <RiFlag2Fill />

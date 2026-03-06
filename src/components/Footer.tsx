@@ -5,8 +5,8 @@ function Footer() {
     <div id="footer">
       <Group justify="space-between" className="footer-group">
         <p>
-          Made with 🌸 by Catherine Yeh{" "}
-          <span className="lighter">(Updated September 2024)</span>
+          Website built by Catherine Yeh{" "}
+          <span className="lighter">(Updated February 2026)</span>
         </p>
 
         <a onClick={() => window.scrollTo(0, 0)} title="Back to top">
@@ -14,7 +14,7 @@ function Footer() {
         </a>
       </Group>
       <span className="accent monospace smaller grad1">
-        catherineyeh [at] g [dot] harvard [dot] edu
+        dayeonki [at] umd [dot] edu
       </span>
     </div>
   );

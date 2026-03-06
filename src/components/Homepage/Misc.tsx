@@ -1,10 +1,8 @@
-import { Card, Grid, Group, Stack } from "@mantine/core";
+import { Card, Grid } from "@mantine/core";
 
-import { funItems, resources, my_projects } from "../Fun/fun";
+import { funItems } from "../Fun/fun";
 import FunCardInner from "../Fun/FunCardInner";
 import { Link } from "react-router-dom";
-import MyImage from "../MyImage";
-import { Fragment } from "react/jsx-runtime";
 
 function Misc() {
   return (
@@ -31,7 +29,7 @@ function Misc() {
         ))}
       </Grid>
 
-      <Grid id="resource-proj-grid" gutter={{ base: 40, md: 50, lg: 50 }}>
+      {/* <Grid id="resource-proj-grid" gutter={{ base: 40, md: 50, lg: 50 }}>
         <Grid.Col span={{ base: 12, xs: 12, sm: 12, md: 8, lg: 9 }}>
           <Stack id="projects" className="subsection" gap={8}>
             <b>Old Projects</b>
@@ -124,8 +122,8 @@ function Misc() {
               </Fragment>
             ))}
           </Stack>
-        </Grid.Col>
-      </Grid>
+        </Grid.Col> */}
+      {/* </Grid> */}
     </section>
   );
 }

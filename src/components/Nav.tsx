@@ -19,21 +19,37 @@ function Nav(props: any) {
     const curY = y as number;
 
     // find positions of each section
-    const research = document.getElementById("research-section")?.offsetTop;
     const news = document.getElementById("news-section")?.offsetTop;
-    const misc = Math.min(
-      document.getElementById("misc-section")?.offsetTop ||
+    const research = document.getElementById("research-section")?.offsetTop;
+    const leadership = Math.min(
+      document.getElementById("leadership-section")?.offsetTop ||
+        document.body.scrollHeight,
+      document.documentElement.offsetHeight -
+        document.documentElement.clientHeight
+    );
+    const baking = Math.min(
+      document.getElementById("baking-section")?.offsetTop ||
+        document.body.scrollHeight,
+      document.documentElement.offsetHeight -
+        document.documentElement.clientHeight
+    );
+    const lowlight = Math.min(
+      document.getElementById("lowlight-section")?.offsetTop ||
         document.body.scrollHeight,
       document.documentElement.offsetHeight -
         document.documentElement.clientHeight
     );
 
-    if (misc && curY > misc - 150) {
-      setSelected("misc");
+    if (leadership && curY > leadership - 150) {
+      setSelected("leadership");
     } else if (news && curY > news - 150) {
       setSelected("news");
     } else if (research && curY > research - 150) {
       setSelected("research");
+    } else if (lowlight && curY > lowlight - 150) {
+      setSelected("lowlight");
+    } else if (baking && curY > baking - 150) {
+      setSelected("baking");
     } else {
       setSelected("about");
     }
@@ -55,14 +71,6 @@ function Nav(props: any) {
             About
           </Link>
           <Link
-            to="#research"
-            className={selected === "research" ? "selected" : ""}
-            onClick={() => setSelected("research")}
-            title="research"
-          >
-            Research
-          </Link>
-          <Link
             to="#news"
             className={selected === "news" ? "selected" : ""}
             onClick={() => setSelected("news")}
@@ -71,12 +79,36 @@ function Nav(props: any) {
             News
           </Link>
           <Link
-            to="#misc"
-            className={selected === "misc" ? "selected" : ""}
-            onClick={() => setSelected("misc")}
-            title="misc"
+            to="#research"
+            className={selected === "research" ? "selected" : ""}
+            onClick={() => setSelected("research")}
+            title="research"
           >
-            Misc
+            Research
+          </Link>
+          <Link
+            to="#leadership"
+            className={selected === "leadership" ? "selected" : ""}
+            onClick={() => setSelected("leadership")}
+            title="leadership"
+          >
+            Leadership
+          </Link>
+          <Link
+            to="#baking"
+            className={selected === "baking" ? "selected" : ""}
+            onClick={() => setSelected("baking")}
+            title="baking"
+          >
+            Baking
+          </Link>
+          <Link
+            to="#lowlight"
+            className={selected === "lowlight" ? "selected" : ""}
+            onClick={() => setSelected("lowlight")}
+            title="lowlight"
+          >
+            How I Fail
           </Link>
         </Group>
       ) : (

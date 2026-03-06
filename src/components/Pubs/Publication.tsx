@@ -12,10 +12,10 @@ import {
 import MyImage from "../MyImage";
 
 function Publication(props: Pub) {
-  // put span tags around "Catherine Yeh" in the author field
+  // put span tags around "Dayeon Ki" in the author field
   const author = props.author.replace(
-    "Catherine Yeh",
-    "<span class='emphasis grad2 accent'>Catherine Yeh</span>"
+    "Dayeon Ki",
+    "<span class='emphasis grad2 accent'>Dayeon Ki</span>"
   );
 
   return (
@@ -42,7 +42,7 @@ function Publication(props: Pub) {
             <p className="venue">
               {props.venue.includes("Preprint")
                 ? props.venue
-                : props.venue + " " + props.year}
+                : props.venue + " " + props.year + " " + props.oral + " " + props.workshop}
             </p>
             <Group gap="md" className="tags">
               {props.tags.map((tag, i) => (
@@ -50,13 +50,15 @@ function Publication(props: Pub) {
                   key={i}
                   className={
                     `monospace tag ` +
-                    (tag === "ai"
+                    (tag === "mt"
                       ? "tag1"
-                      : tag === "vis"
+                      : tag === "multi"
                       ? "tag3"
-                      : tag === "hci"
+                      : tag === "culture"
                       ? "tag2"
-                      : "tag4")
+                      : tag === "hci"
+                      ? "tag4"
+                      : "tag5")
                   }
                 >
                   {tag}

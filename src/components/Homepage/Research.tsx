@@ -12,7 +12,7 @@ import Publication from "../Pubs/Publication";
 import { useEffect, useState } from "react";
 
 function Research() {
-  const increment = 3;
+  const increment = 6;
 
   const minYear = publications[publications.length - 1].year;
   const maxYear = publications[0].year;
@@ -26,9 +26,10 @@ function Research() {
 
   const fieldData = [
     { value: "all", label: "all" },
-    { value: "vis", label: "visualization" },
-    { value: "ai", label: "artificial intelligence" },
-    { value: "hci", label: "human-computer interaction" },
+    { value: "mt", label: "machine translation" },
+    { value: "multi", label: "multilingual" },
+    { value: "culture", label: "cross-cultural" },
+    { value: "hci", label: "human-centered" },
     { value: "misc", label: "misc" },
   ];
 
@@ -57,18 +58,12 @@ function Research() {
   return (
     <section id="research-section">
       <div className="anchor" id="research"></div>
-      <h2>Research Highlights ✨</h2>
+      <h2>Research</h2>
       <p>
-        My research explores how{" "}
-        <span className="accent emphasis">artificial intelligence (AI)</span>{" "}
-        and <span className="accent3 emphasis">visualization</span> can augment
-        each other. Currently, I'm interested in <b>(1)</b> designing
-        interactive visualization tools and methods to support model
-        interpretability{" "}
-        <span className="monospace smaller grad1">[VIS for AI]</span> and{" "}
-        <b>(2)</b> leveraging the capabilities of generative AI models to
-        enhance visualization workflows{" "}
-        <span className="monospace smaller grad2">[AI for VIS]</span>.
+        I investigate how multilingual Artificial Intelligence (AI) systems shape human communication across <span className="accent3 emphasis">languages and cultures</span>.
+        My current work strengthens both sides of the communication pipeline:{" "}
+        <b>(1)</b> on the <b>model</b> side, I develop computational frameworks and evaluate how effectively multilingual systems adapt to diverse linguistic and cultural contexts;{" "}
+        <b>(2)</b> on the <b>human user</b> side, I design workflows to measure their impact on people—and to help users reliably interpret and make decisions from imperfect AI outputs. ⋆✴︎˚｡⋆
       </p>
       <Group id="filters" justify="space-between" gap={"xl"}>
         <Group id="slider-contain" gap={"xs"}>
